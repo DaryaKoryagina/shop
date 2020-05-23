@@ -1,0 +1,208 @@
+//ИСПРАВЛЕННАЯ ВЕРСИЯ
+.header__menu {
+    &_full {
+        background-color: #408de4;
+        .col__item_tel {
+            padding-left: 96px;
+            margin-top: -3px;
+            .tel__main {
+                height: 100%;
+                align-items: center;
+                display: flex;
+                margin: auto;
+                span {
+                    padding-right: 10px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+                .tel_number {
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-left: 2px;
+                    color: black;
+                    font-size: 12px;
+                    font-family: $Roboto;
+                    background-color: $yelloy;
+                    &:hover {
+                        text-decoration: none;
+                        animation: bounce 1s;
+                        background-color: #24bbbc;
+                    }
+                    @keyframes bounce {
+                        0%,
+                        20%,
+                        60%,
+                        100% {
+                            transform: translateY(0);
+                            transform: translateY(0);
+                        }
+                        40% {
+                            transform: translateY(-20px);
+                            transform: translateY(-20px);
+                        }
+                        80% {
+                            transform: translateY(-10px);
+                            transform: translateY(-10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__dropdown {
+        padding-right: 4px;
+        .dropdown {
+            width: 100%;
+            &.show {
+                /* ONE */
+                .dropdown-item {
+                    display: inline;
+                }
+                #hamburger-1 .line:nth-child(2) {
+                    opacity: 0;
+                }
+                #hamburger-1 .line:nth-child(1) {
+                    -webkit-transform: translateY(3px) rotate(45deg);
+                    -ms-transform: translateY(3px) rotate(45deg);
+                    -o-transform: translateY(3px) rotate(45deg);
+                    transform: translateY(3px) rotate(45deg);
+                }
+                #hamburger-1 .line:nth-child(3) {
+                    -webkit-transform: translateY(-5px) rotate(-45deg);
+                    -ms-transform: translateY(-5px) rotate(-45deg);
+                    -o-transform: translateY(-5px) rotate(-45deg);
+                    transform: translateY(-5px) rotate(-45deg);
+                }
+                .dropdown-menu.show {
+                    width: 273px;
+                    margin-top: -1px;
+                }
+            }
+            .dropdown-toggle {
+                color: black;
+                font-size: 14px;
+                font-family: $Roboto;
+                text-transform: uppercase;
+                background-color: $yelloy;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        &.show {
+            width: 100%;
+        }
+    }
+    &__hamburger {
+        .line {
+            width: 14px;
+            height: 2px;
+            background-color: black;
+            display: block;
+            margin: 2px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border-left: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__icons {
+        line-height: 2.0;
+        padding-left: 49px;
+        display: flex;
+        .icon_main {
+            font-family: $Roboto;
+            font-size: 14px;
+            color: #858585;
+        }
+    }
+    &__list {
+        padding-left: 10px;
+        padding-right: 22px;
+        margin-top: -1px;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        a {
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .list__text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: $Relawey;
+            font-weight: bold;
+            &.hot_list {
+                position: relative;
+                .hot_main {
+                    padding-top: 1px;
+                    background-color: #ea5c5c;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    position: absolute;
+                    margin-top: -45px;
+                    margin-left: 13px;
+                }
+                .triangle_hot {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #ea5c5c;
+                    position: absolute;
+                    margin-top: -26px;
+                    margin-left: 17px;
+                }
+            }
+            &.new_list {
+                .new_main {
+                    padding-top: 1px;
+                    background-color: #24bbbc;
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    position: absolute;
+                    margin-top: -45px;
+                    margin-left: 47px;
+                }
+                .triangle_new {
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 6px solid #24bbbc;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    &_blue {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.001rem;
+        font-weight: 600;
+        font-family: $Roboto;
+        font-size: 14px;
+        border-radius: 0px;
+        width: 100%;
+        padding: 1rem;
+    }
+    &-secondary {
+        border: none;
+    }
+}

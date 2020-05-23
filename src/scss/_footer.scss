@@ -1,0 +1,114 @@
+.footer {
+    padding-bottom: 72px;
+    @media(max-width: 991px) {
+        padding-bottom: 0;
+    }
+    @media(max-width: 600px) {
+        padding-bottom: 0;
+    }
+    @media(max-width: 1199px) and (min-width: 992px) {
+        padding-bottom: 0;
+    }
+    .grey_footer {
+        padding-top: 72px;
+        background-color: #f8f8f8;
+        padding-bottom: 72px;
+        .footer_col {
+            margin-top: -6px;
+            &.two {
+                padding-left: 6px;
+                @media(max-width: 991px) {
+                    padding-left: 0;
+                    margin-top: 40px;
+                    text-align: center;
+                }
+            }
+            &.one {
+                margin-top: 0;
+                @media(max-width: 991px) {
+                    text-align: center;
+                }
+            }
+            &.three {
+                padding-left: 63px;
+                @media(max-width: 991px) {
+                    padding-left: 0;
+                    margin-top: 40px;
+                    text-align: center;
+                }
+            }
+            &.for {
+                margin-left: 88px;
+                @media(max-width: 991px) {
+                    margin-left: 0;
+                    margin-top: 40px;
+                    text-align: center;
+                }
+            }
+            .footer_title {
+                font-size: 15px;
+                font-family: $Relawey;
+                font-weight: bold;
+                color: #5d5d5d;
+                text-transform: uppercase;
+            }
+            .footer_mainA {
+                line-height: 34px;
+                padding-top: 19px;
+                display: flex;
+                flex-direction: column;
+                a {
+                    font-size: 14px;
+                    font-family: $Roboto;
+                    color: #777777;
+                }
+            }
+            .supermart {
+                display: flex;
+                padding-left: 5px;
+                @media(max-width: 991px) {
+                    display: block;
+                }
+                .sup__title {
+                    font-size: 25px;
+                    font-family: $Relawey;
+                    font-weight: bold;
+                    margin-top: -4px;
+                }
+            }
+            .supermart_text {
+                padding-left: 2px;
+                font-size: 14px;
+                padding-top: 9px;
+                font-family: $Roboto;
+                color: #aaaaaa;
+            }
+            .supermart_contact {
+                padding-left: 2px;
+                padding-top: 11px;
+                line-height: 33px;
+                font-size: 14px;
+                font-family: $Roboto;
+                color: #555555;
+                a {
+                    font-size: 14px;
+                    font-family: $Roboto;
+                    color: #aaaaaa;
+                }
+            }
+        }
+    }
+    .footer_white {
+        height: 81px;
+        padding-top: 32px;
+        background-color: #ffffff;
+        .footText {
+            color: #888888;
+            font-family: $Roboto;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.05rem;
+        }
+    }
+}

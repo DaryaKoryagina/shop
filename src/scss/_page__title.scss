@@ -1,0 +1,60 @@
+// Исправление
+.page__title_block {
+    background-color: #686868;
+}
+
+.page__main {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 86px;
+    padding-top: 89px;
+    @media(max-width: 768px) {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .page__title {
+        h1 {
+            font-size: 32px;
+            color: white;
+            text-transform: uppercase;
+            font-family: $Relawey;
+            font-weight: 600;
+        }
+    }
+}
+
+.breadcrumb {
+    padding-top: 3px;
+    padding: 0;
+    &.grey {
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        background-color: #686868;
+        .breadcrumb-item {
+            &.grey {
+                padding-top: 2px;
+                &:before {
+                    color: white;
+                }
+                a {
+                    font-size: 12px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    font-family: $Relawey;
+                    font-weight: 600;
+                }
+                .link_mg {
+                    margin-left: -10px;
+                    padding-left: 9px;
+                    padding-top: 4px;
+                }
+                .link_mt {
+                    padding-top: 2px;
+                }
+            }
+        }
+    }
+}

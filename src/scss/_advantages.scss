@@ -1,0 +1,53 @@
+//isprawlenie
+.advantages {
+    background-color: #f9f9f9;
+    @media(max-width: 991px) {
+        padding-top: 87px;
+    }
+    .col_advantages {
+        text-align: center;
+        padding-bottom: 87px;
+    }
+    &__main {
+        .round {
+            margin-top: 79px;
+            margin-left: 142px;
+            background-color: #408de4;
+            border-radius: 42px;
+            width: 80px;
+            height: 81px;
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            @media(max-width: 991px) {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            @media(max-width: 1199px) and (min-width: 992px) {
+                margin-left: 105px;
+            }
+            .img_round {
+                position: absolute;
+            }
+        }
+    }
+    .round__main {
+        padding-top: 21px;
+        .round_title {
+            font-size: 15px;
+            font-family: $Relawey;
+            font-weight: 600;
+            color: #222222;
+            text-transform: uppercase;
+        }
+        .round_text {
+            padding-top: 13px;
+            font-size: 14px;
+            font-family: $Roboto;
+            font-weight: 400;
+            color: #9a9a9a;
+        }
+    }
+}

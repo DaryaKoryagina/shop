@@ -1,0 +1,81 @@
+//ИСПРАВЛЕННАЯ ВЕРСИЯ
+.header__search {
+    padding-bottom: 33px;
+    padding-top: 37px;
+    &_supermart {
+        display: flex;
+    }
+    &__title {
+        padding-left: 5px;
+        letter-spacing: 0.001rem;
+        font-size: 26px;
+        font-family: $Roboto;
+        font-weight: 400;
+    }
+    &_main {
+        margin-left: 1.5rem;
+        display: flex;
+        @media(max-width: 1199px) and (min-width: 992px) {
+            margin-left: 0;
+        }
+    }
+    &__input {
+        border-top-left-radius: 3px;
+        border: 1px solid #e8e8e8;
+        border-bottom-left-radius: 3px;
+        padding: 0 1rem;
+        height: 100%;
+        width: 503px;
+        &::placeholder {
+            font-size: 12px;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+            margin-left: -95px;
+        }
+    }
+    &__btn {
+        margin-left: -4px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        height: 100%;
+        border: 0;
+        background-color: $yelloy;
+        width: 48px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__item {
+        border-radius: 3px;
+        display: flex;
+        border: 1px solid #e8e8e8;
+    }
+    &__img {
+        border-right: 1px solid;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        color: #e8e8e8;
+        &:hover {
+            color: #e8e8e8;
+        }
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        font-size: 12px;
+        font-family: $Roboto;
+        font-weight: 400;
+    }
+    &__col {
+        margin-top: -7px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .header__line {
+        &_usd {
+            margin-right: 10px;
+        }
+    }
+}

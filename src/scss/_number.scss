@@ -1,0 +1,28 @@
+.statistics {
+    margin-top: -2px;
+    padding-bottom: 82px;
+    padding-top: 76px;
+    background-color: #d0d0d0;
+    font-family: $Roboto;
+    font-size: 15px;
+    color: #f9f9f9;
+    font-weight: 400;
+    .num_col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .statistics__main {
+            @media(max-width: 991px) {
+                padding-bottom: 26px;
+            }
+        }
+        .number {
+            line-height: normal;
+            font-family: $Roboto;
+            font-weight: 400;
+            color: #f9f9f9;
+            font-size: 50px;
+        }
+    }
+}

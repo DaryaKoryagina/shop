@@ -1,0 +1,50 @@
+.slide_tel {
+    margin-top: 74px;
+    background: $light-gray;
+    .flickity-enabled.is-draggable .flickity-viewport {
+        max-width: 80%;
+        margin: auto;
+        position: relative;
+    }
+    .carousel-cell {
+        height: 160px;
+        display: flex;
+        align-items: center;
+        width: 24%;
+        margin-right: 15px;
+        .icon_slider {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .flickity-prev-next-button .flickity-button-icon {
+        position: absolute;
+        left: 27%;
+        top: 32%;
+        width: 48%;
+        height: 33%;
+    }
+    .flickity-prev-next-button {
+        top: 50%;
+        width: 23px;
+        height: 28px;
+        border-radius: 0;
+        background: #f9f9f9;
+        border: 1px solid #dddddd;
+        &.previous {
+            margin-left: 5px;
+            left: 0;
+        }
+        &.next {
+            right: 0;
+        }
+    }
+    .slide_tel .flickity-prev-next-button {
+        top: 50%;
+        width: 26px;
+        height: 26px;
+        border-radius: 0;
+        background: #f9f9f9;
+        border: 1px solid #dddddd;
+    }
+}

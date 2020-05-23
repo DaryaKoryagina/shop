@@ -1,0 +1,66 @@
+//ИСПРАВЛЕНННАЯ ВЕРСИЯ
+.header_full {
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+
+.header__menu {
+    background-color: #fafafa;
+    font-family: $Roboto;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #e6e6e6;
+    box-shadow: 0px 5px 16px 0px rgba(230, 230, 230, 1);
+    &_one {
+        a {
+            font-family: $Roboto;
+            color: #777777;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_two {
+        padding-left: 3px;
+        margin-right: -7px;
+        a {
+            font-family: $Roboto;
+            color: #777777;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__line {
+        border-left: 1px solid #e6e6e6;
+        height: 17px;
+        &_mr {
+            margin-right: 5px;
+        }
+        &-eng {
+            margin-right: 21px;
+            padding-left: 30px;
+        }
+    }
+    &__btn {
+        font-family: &Roboto;
+        font-weight: 400;
+        color: #474646;
+        font-size: 11px;
+        text-transform: uppercase;
+        background-color: #e6e6e6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+    }
+}

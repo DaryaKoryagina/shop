@@ -1,0 +1,193 @@
+.submit_blue {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-top: 1px;
+    background-color: #408de4;
+    @media(max-width: 991px) {
+        padding-top: 36px;
+        padding-bottom: 26px;
+    }
+    .img_telMain {
+        margin: auto;
+        justify-content: space-between;
+        display: flex;
+        @media(max-width: 600px) {
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+        @media(max-width: 767px) {
+            justify-content: center;
+        }
+    }
+    .img_tel {
+        color: #ecf2fb;
+        font-size: 30px;
+        @media(max-width: 600px) {
+            padding-right: 2rem;
+            padding-bottom: 1rem;
+        }
+        @media(max-width: 767px) {
+            padding-right: 2rem;
+            justify-content: center;
+        }
+    }
+    .telText {
+        margin-right: 18px;
+        margin-top: 3px;
+        text-transform: uppercase;
+        color: #ecf2fb;
+        font-size: 14px;
+        font-family: $Relawey;
+        font-weight: bold;
+        @media(max-width: 1199px) and (min-width: 992px) {
+            margin-right: -1px;
+            margin-top: 6px;
+            font-size: 12px;
+        }
+    }
+}
+
+.seach_col {
+    display: flex;
+    .seach_main {
+        margin-left: 0;
+        display: flex;
+        @media(max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: -26px;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+            width: 100%;
+        }
+    }
+    .seach {
+        height: 100%;
+        width: 403px;
+        font-size: 13px;
+        padding-left: 16px;
+        @media(max-width: 600px) {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+            flex-grow: 1;
+        }
+    }
+    .btn_seach {
+        span {
+            font-size: 12px;
+            font-family: $Relawey;
+            font-weight: bold;
+        }
+        margin-left: -2px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #ffd200;
+        width: 98px;
+        @media(max-width: 600px) {
+            justify-content: center;
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+.seach_iconMain {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 991px) {
+        padding-top: 51px;
+        justify-content: center;
+    }
+    @media(max-width: 600px) {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    @media(max-width: 767px) {
+        padding-bottom: 2rem;
+    }
+    .submit__line {
+        border-left: 2px solid #5c9ee8;
+        height: 46px;
+        margin-left: -26px;
+        @media(max-width: 991px) {
+            display: none;
+        }
+        @media(max-width: 600px) {
+            display: none;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+            display: none;
+        }
+    }
+    .seachIcon_text {
+        text-transform: uppercase;
+        color: #ecf2fb;
+        font-size: 13px;
+        font-family: $Relawey;
+        font-weight: bold;
+        justify-content: center;
+        margin-top: 15px;
+        margin-right: -10px;
+        @media(max-width: 991px) {
+            padding: 0px 2rem;
+        }
+        @media(max-width: 600px) {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        @media(max-width: 1199px) and (min-width: 992px) {
+            margin-right: 11px;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+    }
+    .seachIcon {
+        margin: 0 -6px;
+        display: flex;
+        justify-content: space-between;
+        color: #444444;
+        @media(max-width: 600px) {
+            justify-content: center;
+        }
+    }
+    .round_seach {
+        margin-right: 4px;
+        background-color: #ffffff;
+        border-radius: 40px;
+        height: 41px;
+        width: 41px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 600px) {
+            margin-right: 0.5rem;
+        }
+        .iconS {
+            position: absolute;
+            text-align: center;
+        }
+    }
+}
+
+.col_tel {
+    @media(max-width: 991px) {
+        flex: 0 0 50%;
+        max-width: 29%;
+    }
+    @media(max-width: 600px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    @media(max-width: 767px) {
+        max-width: 100%;
+        flex: 0 0 100%;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
