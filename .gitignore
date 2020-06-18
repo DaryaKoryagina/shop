@@ -1,4 +1,5 @@
 node_modules
-правки.txt
 package-lock.json
-legkij-maket-dlya-internet-magazina-about-us.psd
+/dist/css/*
+
+/dist/js/*
