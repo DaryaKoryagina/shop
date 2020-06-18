@@ -1,0 +1,265 @@
+            .card__shop {
+                .col_input {
+                    display: flex;
+                    margin: auto;
+                    justify-content: center;
+                    .card__count {
+                        position: relative;
+                        .card__count__input {
+                            position: relative;
+                            width: 70px;
+                            height: 35px;
+                            border: 1px solid #eeeeee;
+                            background-color: #fcfcfc;
+                        }
+                        .btn__input {
+                            position: absolute;
+                            text-align: center;
+                            left: 3.2rem;
+                            top: 0.3rem;
+                            right: 0;
+                            &_item {
+                                margin-bottom: 3px;
+                                width: 14px;
+                                height: 11px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #eeeeee;
+                                border: 1px solid #eeeeee;
+                                .icon__input {
+                                    font-size: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .order__input_main {
+                    padding-top: 1.5rem;
+                    display: flex;
+                    margin: auto;
+                    justify-content: space-between;
+                    .order__input {
+                        margin-right: 0.4rem;
+                        height: 40px;
+                        border: 1px solid #e8e8e8;
+                        font-size: 13px;
+                        font-family: $Roboto;
+                        color: #aaaaaa;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-right: 1.3rem;
+                        padding-left: 1rem;
+                    }
+                }
+                .card_calculate {
+                    .card__list {
+                        margin-top: 1rem;
+                        border: 1px solid #e8e8e8;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .card__list_item {
+                            padding: 1.1rem;
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            border-right: 1px solid #e8e8e8;
+                            border-bottom: 1px solid #e8e8e8;
+                        }
+                        .title_calculate {
+                            margin-top: 4.8rem;
+                        }
+                        .calculate_name {
+                            font-size: 14px;
+                            color: #222222;
+                            font-weight: bold;
+                            font-family: $Relawey;
+                            text-transform: uppercase;
+                        }
+                        .calculate_numer {
+                            font-size: 14px;
+                            color: #222222;
+                            font-weight: 500;
+                            font-family: $Roboto;
+                            text-transform: uppercase;
+                            padding-left: 1.8rem;
+                        }
+                        .custom__select {
+                            margin-top: 1rem;
+                            .select2-container {
+                                width: 232.5px;
+                            }
+                        }
+                        .calculate_input_name {
+                            color: #3485b1;
+                            font-size: 14px;
+                            font-weight: 500;
+                            font-family: $Roboto;
+                            margin-top: 0.6rem;
+                        }
+                        .input_calculate {
+                            color: #6c6c6c;
+                            border-color: #e8e8e8;
+                            line-height: 1.5;
+                            input {
+                                border-radius: 3px;
+                                padding-left: 15px;
+                                width: 100%;
+                                margin-top: 0.7rem;
+                                height: 38px;
+                                margin-bottom: 1rem;
+                                border: 1px solid #e8e8e8;
+                            }
+                        }
+                    }
+                    //кнопки
+                    .login__btn {
+                        letter-spacing: 0.02rem;
+                        padding: 0.65rem 0.8rem;
+                    }
+                    .functional__btn {
+                        letter-spacing: 0.02rem;
+                        padding: 0.65rem 0.85rem;
+                    }
+                    .custom__select {
+                        width: 100%;
+                    }
+                    .title_calculate {
+                        font-size: 18px;
+                        color: #222222;
+                        font-weight: bold;
+                        font-family: $Relawey;
+                        text-transform: uppercase;
+                        margin-top: 4.8rem;
+                    }
+                }
+            }
+            
+            .main__content {
+                margin-bottom: 6rem;
+                padding-top: 3.2rem;
+                .main__title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    &__name {
+                        margin-top: 0.6rem;
+                    }
+                    .link {
+                        color: #999999;
+                        font-family: $Roboto;
+                        font-size: 13px;
+                        margin-top: 0.3rem;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 500;
+                        letter-spacing: 0.04rem;
+                        .arrow_link {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            
+            [type="radio"]:checked+label,
+            [type="radio"]:not(:checked)+label {
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                line-height: 20px;
+                display: inline-block;
+                color: #666;
+            }
+            
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 13px;
+                height: 13px;
+                border: 1px solid #ddd;
+                border-radius: 100%;
+                background: #fff;
+                margin-top: 0.2rem;
+            }
+            
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                content: '';
+                height: 7px;
+                width: 7px;
+                top: 6px;
+                left: 3px;
+                background: #232323;
+                position: absolute;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            
+            [type="radio"]:not(:checked)+label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            
+            [type="radio"]:checked+label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            
+            //общее
+            .select_main {
+                margin-top: 0.9rem;
+                .select2-selection {
+                    &--single {
+                        height: 38px;
+                    }
+                    .select2-selection__rendered {
+                        margin-top: 0.2rem;
+                        padding-left: 15px;
+                        color: #6c6c6c;
+                    }
+                }
+                .select2-container--default .select2-selection--single .select2-selection__arrow {
+                    height: 39px;
+                }
+                .select2 {
+                    &-container {
+                        .select2-container--default {
+                            width: 232.5px;
+                        }
+                    }
+                }
+                .select2-selection--single {
+                    border-radius: 3px;
+                    border: 1px solid #e8e8e8;
+                }
+                .arrow_input {
+                    padding-top: 0.8rem;
+                    font-size: 14px;
+                }
+            }
+            
+            .calculate_choise {
+                padding-right: 1.4rem;
+                p {
+                    margin-top: 0.3rem;
+                    font-size: 14px;
+                    color: #777777;
+                    font-weight: 500;
+                    font-family: $Roboto;
+                    margin-bottom: 0.3rem;
+                    label {
+                        margin-bottom: 0;
+                    }
+                }
+            }

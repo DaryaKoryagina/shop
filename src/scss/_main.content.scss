@@ -1,0 +1,165 @@
+.main__content {
+    margin-bottom: 3rem;
+    // padding-top: 0;
+    // margin-bottom: 11.5rem;
+    // margin-bottom: 3.2rem;
+    h2 {
+        padding-top: 0.2rem;
+        font-size: 24px;
+    }
+    .product_main {
+        padding-bottom: 1.2rem;
+        padding-top: 1.3rem;
+    }
+    padding-top: 3.1rem;
+    .wishlist {
+        @media(max-width: 991px) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.card_table {
+    @media(max-width: 991px) {
+        border-top: 1px solid $grey;
+    }
+    &_header {
+        border-top: 1px solid $grey;
+        border-right: 1px solid $grey;
+        border-left: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+        padding-top: 1.3rem;
+        background-color: #f8f8f8;
+        margin-top: 1.3rem;
+        padding-bottom: 0.9rem;
+        @media(max-width: 991px) {
+            display: none;
+        }
+        &__product {
+            padding-left: 1.7rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: $Relawey;
+        }
+        &__prise {
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: $Relawey;
+        }
+        &__status {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: $Relawey;
+        }
+    }
+    &_item {
+        padding: 1.2rem 0;
+        border-bottom: 1px solid $grey;
+        border-right: 1px solid $grey;
+        border-left: 1px solid $grey;
+        background-color: #ffffff;
+        .item {
+            &__ware {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-left: 1.7rem;
+                @media(max-width: 991px) {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            &__name {
+                font-size: 14px;
+                font-family: $Roboto;
+                color: #7a7a7a;
+            }
+            &__img {
+                padding-right: 1.2rem;
+            }
+            &__count {
+                font-size: 14px;
+                font-family: $Roboto;
+                color: #222222;
+                font-weight: 600;
+                justify-content: center;
+                display: flex;
+                padding-top: 1.3rem;
+            }
+            &__status {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                font-family: "Roboto", sans-serif;
+                color: #92aa79;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding-left: 1rem;
+                margin-bottom: 0;
+                .price__status {
+                    @media(max-width: 991px) {
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                    }
+                }
+                &_nostock {
+                    color: #000000;
+                }
+            }
+            &_btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &_close {
+                display: flex;
+                align-items: center;
+                .functional__crest {
+                    display: flex;
+                    justify-content: end;
+                    margin-left: auto;
+                    padding-right: 1.6rem;
+                    @media(max-width: 991px) {
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        margin-top: 1rem;
+                    }
+                }
+                .round {
+                    border: 1px solid #ececec;
+                    width: 1.5rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 24px;
+                    &__img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.functional__btn {
+    @media(max-width: 991px) {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
+
+.advantage {
+    border-top: 1px solid $grey;
+}

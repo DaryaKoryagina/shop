@@ -1,0 +1,52 @@
+.btn {
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #232323;
+    padding: 0.7rem 1.3rem 0.5rem;
+    font-weight: 600;
+    border-radius: 2px;
+    &_grey {
+        padding: 0.6rem 0.9rem;
+        color: #888888;
+        background-color: #eeeeee;
+        border: 1px solid #eeeeee;
+        @media(max-width: 991px) {
+            margin-bottom: 2rem;
+        }
+        &_card {
+            margin-bottom: 0.9rem;
+        }
+    }
+    &_big {
+        background-color: #408de4;
+        flex: 0 0 100%;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+        font-family: $Relawey;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    &_pay {
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+        margin-right: 1.5rem;
+        padding: 1rem 1.8rem;
+        background-color: #408de4;
+        font-family: $Relawey;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+}
+
+h2 {
+    // padding-top: 3.2rem;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: $Relawey;
+    color: #232323;
+    font-weight: 600;
+}

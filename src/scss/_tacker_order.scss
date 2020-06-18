@@ -1,0 +1,89 @@
+        .tracker__form {
+            margin-bottom: 8.7rem;
+            margin-top: 3.2rem;
+            @media(max-width: 768px) {
+                margin-right: 0.5rem;
+                margin-bottom: 2.7rem;
+            }
+            .tracker {
+                margin-top: 2.1rem;
+                margin-left: 0rem;
+            }
+            .tracker__main_text {
+                position: relative;
+                display: flex;
+                .tracker__text {
+                    line-height: 2;
+                    font-family: "Raleway", sans-serif;
+                    font-weight: bold;
+                    position: relative;
+                    margin-top: 0.6rem;
+                    font-size: 14px;
+                    color: #777777;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 2.7rem;
+                    padding-right: 4.5rem;
+                    background-color: #f5f5f5;
+                    border: 1px solid #e8e8e8;
+                }
+                .tracker__triangle {
+                    position: absolute;
+                    left: 1.7rem;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 10px solid #e8e8e8;
+                    &::before {
+                        content: "";
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-bottom: 9px solid #f5f5f5;
+                        position: absolute;
+                        top: 2px;
+                        left: -7px;
+                    }
+                }
+            }
+            .tracker__group__main {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 3.3rem;
+                @media(max-width: 768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .form-group {
+                    flex: 0 0 48%;
+                    @media(max-width: 768px) {
+                        flex: 0 0 100%;
+                    }
+                    label {
+                        font-family: $Relawey;
+                        font-size: 14px;
+                        color: #222222;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    input {
+                        height: calc(1.8em + 0.75rem + 2px);
+                        &::placeholder {
+                            font-family: $Roboto;
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+            .btn_functional {
+                margin-top: 1rem;
+                font-size: 14px;
+                padding: 0.8rem 3.3rem 0.8rem;
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }

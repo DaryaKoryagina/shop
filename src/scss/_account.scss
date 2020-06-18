@@ -1,0 +1,97 @@
+.account__form {
+    h2 {
+        padding-top: 3.2rem;
+    }
+    .account {
+        padding-top: 2.2rem;
+        display: flex;
+        &__form_title {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: $Relawey;
+            color: #232323;
+            font-weight: 600;
+        }
+        &__btn {
+            margin-top: 1.3rem;
+            align-items: center;
+            display: flex;
+            .btn_grey {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+                color: #b1b1b1;
+                font-size: 12px;
+                font-family: $Relawey;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        &__end {
+            margin-bottom: 9.5rem;
+            padding-top: 1.3rem;
+            font-size: 14px;
+            color: #222222;
+            font-family: $Roboto;
+            font-weight: 700;
+        }
+        &__form_one {
+            margin-bottom: 1.5rem;
+        }
+        &__form {
+            .subtitle__input_one {
+                padding-top: 1.7rem;
+                font-size: 14px;
+                font-family: $Roboto;
+                color: #808080;
+                font-weight: 300;
+                span {
+                    color: #fc6666;
+                }
+            }
+        }
+        .form_one {
+            .form-control {
+                margin-bottom: 1.1rem;
+                height: 2.8rem;
+                width: 100%;
+            }
+        }
+        .form_two {
+            .form-control {
+                height: 2.8rem;
+                width: 100%;
+            }
+        }
+        .subtitle__input {
+            margin-bottom: 0.4rem;
+            font-size: 14px;
+            font-family: $Roboto;
+            color: #808080;
+            font-weight: 300;
+            span {
+                color: #fc6666;
+            }
+        }
+    }
+}
+
+//общее
+.subtitle__input_one {
+    padding-top: 1.7rem;
+    font-size: 14px;
+    font-family: $Roboto;
+    color: #808080;
+    font-weight: 300;
+    span {
+        color: #fc6666;
+    }
+}
+
+.account__check {
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    color: #777777;
+    font-size: 14px;
+    font-family: $Relawey;
+    font-weight: 300;
+}
