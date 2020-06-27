@@ -27,12 +27,16 @@ module.exports = {
                 {
                     // This loader resolves url() and @imports inside CSS
                     loader: "css-loader",
+                    options: {
+                        sourceMap: true,
+                    },
                 },
                 {
                     // First we transform SASS to standard CSS
                     loader: "sass-loader",
                     options: {
-                        implementation: require("sass")
+                        implementation: require("sass"),
+                        sourceMap: true,
                     }
                 }
             ]
