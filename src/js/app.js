@@ -72,7 +72,80 @@ $(document).ready(function($) {
         nextBtn.addEventListener('click', function() {
             relat.next();
         });
+        let carouselFooter = document.querySelector('.slider__footer')
+        console.log(carouselFooter)
+        if (carouselFooter) {
+            let Footer = new Flickity(carouselFooter, {
+                prevNextButtons: false,
+                pageDots: false,
+                groupCells: true,
+                wrapAround: true,
+
+            });
+            var previousButton = document.querySelector('#btn_footer_start');
+            previousButton.addEventListener('click', function() {
+                Footer.previous();
+            });
+
+            var nextButton = document.querySelector('#btn_footer_next');
+            nextButton.addEventListener('click', function() {
+                Footer.next();
+            });
+        }
+
+
+
+
+
     }
 
 
+    //новое
+
+    let carouselOffer = document.querySelector('.offer-main')
+    console.log(carouselOffer)
+    if (carouselOffer) {
+        let offer = new Flickity(carouselOffer, {
+            prevNextButtons: false,
+            pageDots: true,
+
+        });
+    }
+    //таймер
+    var timer;
+    // var compareDate = new Date(2021, 5, 30, 9, 22, 56); // // 1 января 2011, 00:00:00;
+    var compareDate = new Date();
+    compareDate.setDate(compareDate.getDate() + 7); //just for this demo today + 7 days
+    console.log(compareDate.getDate())
+    timer = setInterval(function() {
+        timeBetweenDates(compareDate);
+    }, 1000);
+
+    function timeBetweenDates(toDate) {
+        var dateEntered = toDate;
+        var now = new Date();
+        var difference = dateEntered.getTime() - now.getTime();
+
+        if (difference <= 0) {
+
+            // Timer done
+            clearInterval(timer);
+
+        } else {
+
+            var seconds = Math.floor(difference / 1000);
+            var minutes = Math.floor(seconds / 60);
+            var hours = Math.floor(minutes / 60);
+            var days = Math.floor(hours / 24);
+
+            hours %= 24;
+            minutes %= 60;
+            seconds %= 60;
+
+            $("#days").text(days);
+            $("#hours").text(hours);
+            $("#minutes").text(minutes);
+            $("#seconds").text(seconds);
+        }
+    }
 })

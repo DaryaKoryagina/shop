@@ -74,6 +74,82 @@
             font-family: $Roboto;
         }
     }
+    .count__content_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        .grouped_start__button {
+            margin-top: 0.4rem;
+        }
+        .count__content_timer {
+            display: flex;
+            align-items: center;
+            .count__text {
+                margin-right: 1.3rem;
+                font-size: 20px;
+                color: #2a2b2e;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            .count__text__subtitle {
+                font-size: 15px;
+                color: #999999;
+                font-weight: 500;
+                text-transform: none;
+            }
+            #timer {
+                margin-top: 0.4rem;
+                display: flex;
+                font-family: $Roboto;
+                font-size: 14px;
+                color: #999;
+                letter-spacing: -1px;
+                .timer_value {
+                    margin-right: 0.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .value {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        background: #5399e7;
+                        height: 24px;
+                        width: 43px;
+                        font-weight: 500;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
+                    .title_day {
+                        border-bottom-left-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        font-weight: 500;
+                        text-transform: none;
+                        font-family: $Roboto;
+                        font-size: 14px;
+                        color: #ffffff;
+                        background: #408de4;
+                        height: 24px;
+                        width: 43px;
+                        padding-top: 1px;
+                        text-align: center;
+                    }
+                }
+            }
+            #timer span {
+                font-family: $Roboto;
+                font-size: 14px;
+                color: #ffffff;
+                text-transform: none;
+            }
+            #timer span:first-child {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 .carousel-cell {

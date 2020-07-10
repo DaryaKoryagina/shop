@@ -7,10 +7,22 @@ $fa-font-path: "node_modules/@fortawesome/fontawesome-free/webfonts" !default;
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap');
 $Relawey: 'Raleway',
 sans-serif;
 $Roboto: 'Roboto',
 sans-serif;
+$Poppins:'Poppins',
+sans-serif;
+$Oswald:'Oswald',
+sans-serif;
+$Cabin:'Cabin',
+sans-serif;
+$Merriweather: 'Merriweather',
+serif;
 @media (min-width: 1200px) {
     .container-xl,
     .container-lg,
