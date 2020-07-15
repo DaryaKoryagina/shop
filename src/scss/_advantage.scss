@@ -9,6 +9,10 @@
         .advantage_main {
             margin-top: 43px;
             padding-bottom: 42px;
+            @media(max-width: 991px) {
+                margin-top: 20px;
+                padding-bottom: 8px;
+            }
             .advantage_img {
                 height: 37px;
             }

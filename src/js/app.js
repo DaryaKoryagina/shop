@@ -1,7 +1,9 @@
 import * as $ from 'jquery';
 import popper from 'popper.js';
 import bootstrap from 'bootstrap';
-import Flickity from 'flickity-fullscreen'
+import Flickity from 'flickity'
+import FlickityFull from 'flickity-fullscreen'
+import FlickityNav from 'flickity-as-nav-for'
 import * as select2 from 'select2'
 
 
@@ -19,7 +21,7 @@ $(document).ready(function($) {
     let carouselMain = document.querySelector('.slider-main')
     console.log(carouselMain)
     if (carouselMain) {
-        let flkty = new Flickity(carouselMain, {
+        let flkty = new FlickityFull(carouselMain, {
             prevNextButtons: false,
             pageDots: false,
             fullscreen: true,
@@ -33,17 +35,19 @@ $(document).ready(function($) {
         nextButton.addEventListener('click', function() {
             flkty.next();
         });
+        let carouselNav = document.querySelector('.slider-nav')
+        if (carouselNav) {
+            let flkty2 = new FlickityNav(carouselNav, {
+                asNavFor: ".slider-main",
+                contain: true,
+                pageDots: false,
+                prevNextButtons: false
+            });
+        }
     }
-    let carouselNav = document.querySelector('.slider-nav')
-    if (carouselMain) {
-        let flkty2 = new Flickity(carouselNav, {
-            asNavFor: ".slider-main",
-            contain: true,
-            freeScroll: true,
-            pageDots: false,
-            prevNextButtons: false
-        });
-    }
+
+
+
     let carouselTel = document.querySelector('#slide_tel_carousel')
     if (carouselTel) {
         let flktyTel = new Flickity(carouselTel, {

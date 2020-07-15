@@ -60,6 +60,8 @@
                                 }
                             }
                             .img_primer {
+                                height: auto;
+                                width: 100%;
                                 @media(max-width: 991px) {
                                     text-align: center;
                                     padding-top: 0;

@@ -12,6 +12,10 @@
         padding-top: 72px;
         background-color: #f8f8f8;
         padding-bottom: 72px;
+        @media(max-width: 991px) {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
         .footer_col {
             margin-top: -6px;
             &.two {
@@ -63,16 +67,25 @@
                 }
             }
             .supermart {
+                align-items: center;
                 display: flex;
                 padding-left: 5px;
                 @media(max-width: 991px) {
                     display: block;
                 }
+                img {
+                    width: 36px;
+                    height: auto;
+                }
                 .sup__title {
                     font-size: 25px;
                     font-family: $Relawey;
                     font-weight: bold;
-                    margin-top: -4px;
+                    margin-top: 1px;
+                    color: #050505;
+                    @media(max-width: 991px) {
+                        margin-top: 4px;
+                    }
                 }
             }
             .supermart_text {
@@ -108,6 +121,10 @@
             font-size: 12px;
             font-weight: 500;
             letter-spacing: 0.05rem;
+            @media(max-width: 991px) {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 }

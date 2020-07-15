@@ -23,6 +23,9 @@
         padding-top: 65px;
     }
     .img_people {
+        height: 261px;
+        object-fit: cover;
+        width: 100%;
         @media(max-width: 991px) {
             width: 100%;
         }

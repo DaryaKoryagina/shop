@@ -4,13 +4,21 @@
     padding-top: 37px;
     &_supermart {
         display: flex;
+        img {
+            width: 49px;
+            height: auto;
+        }
     }
     &__title {
         padding-left: 6px;
-        letter-spacing: 0.06rem;
         font-size: 26px;
-        font-family: $Roboto;
         font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 26px;
+        font-family: "Oswald", sans-serif;
+        color: #050505;
+        ;
     }
     &_main {
         margin-left: 1.5rem;
