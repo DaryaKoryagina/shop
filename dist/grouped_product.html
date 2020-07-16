@@ -29,7 +29,7 @@
                             <i class="far fa-heart"></i><a href="#">Wishlist</a>
                             <div class="header__line "></div>
                             <a class="header__line_eng" href="#">English</a>
-                            <a class="header__menu__btn" href="#"> Download App</a>
+                            <a class="header__menu__btn hvr-pop" href="#"> Download App</a>
 
                         </div>
                     </div>
@@ -429,7 +429,7 @@
                         <div class="card__btn">
                             <div class="card__btn_black">
 
-                                <button class="btn_black">
+                                <button class="btn_black btn-pulse-yellow ">
                                     <div class="btn_black_text">Add to cart</div>
                                     <div class="btn_black_img"> <i class="fas fa-shopping-cart"></i></div>
                                 </button>
@@ -459,7 +459,8 @@
                                     s.type = 'text/javascript';
                                     s.charset = 'UTF-8';
                                     s.async = true;
-                                    s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                    s.src = ('https:' == window.location.protocol ? 'https' : 'http') +
+                                        '://share.pluso.ru/pluso-like.js';
                                     var h = d[g]('body')[0];
                                     h.appendChild(s);
                                 }
@@ -533,12 +534,24 @@
                                     <div class="input__review_subtitle">Your email address will not be published. Required fields are marked<span>*</span>
                                     </div>
                                     <div class="item__rating">Your Rating
-                                        <div class="rating__star">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
+                                        <div class="rating-stars">
+                                            <ul id='stars'>
+                                                <li class='star' data-value='1'>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                                <li class='star' data-value='2'>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                                <li class='star' data-value='3'>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                                <li class='star' data-value='4'>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                                <li class='star' data-value='5'>
+                                                    <i class="fas fa-star"></i>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -561,7 +574,7 @@
                                         </div>
                                         <div class="input_btn">
                                             <input type="first_name" class="form-control" id="FirstName ">
-                                            <button class="btn__form">Submit</button> </div>
+                                            <button class="btn__form btn-pulse">Submit</button> </div>
                                     </div>
                                 </form>
                             </div>
@@ -609,8 +622,10 @@
             <div class="related__product_title">
                 <div class="related_title">Related Products</div>
                 <div class="grouped_start__button">
-                    <button class="start__btn" id="btn_carusel_start"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                    <button class="start__btn" id="btn_carusel_next"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                    <button class="start__btn" id="btn_carusel_start"><i class="fas fa-chevron-left"
+                            aria-hidden="true"></i></button>
+                    <button class="start__btn" id="btn_carusel_next"><i class="fas fa-chevron-right"
+                            aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>

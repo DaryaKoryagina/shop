@@ -58,7 +58,12 @@
             font-size: 20px;
             margin-bottom: 23px;
             line-height: 52px;
-            color: #b5b5b5;
+            a {
+                color: #b5b5b5;
+                &:hover {
+                    color: #29a4c4;
+                }
+            }
         }
     }
 }

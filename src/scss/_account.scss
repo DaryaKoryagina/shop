@@ -19,7 +19,6 @@
             .btn_grey {
                 padding-left: 1.6rem;
                 padding-right: 1.6rem;
-                color: #b1b1b1;
                 font-size: 12px;
                 font-family: $Relawey;
                 font-weight: bold;
@@ -27,6 +26,12 @@
             }
         }
         &__end {
+            a {
+                color: #222222;
+                &:hover {
+                    color: #808080;
+                }
+            }
             margin-bottom: 9.5rem;
             padding-top: 1.3rem;
             font-size: 14px;
@@ -54,12 +59,20 @@
                 margin-bottom: 1.1rem;
                 height: 2.8rem;
                 width: 100%;
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem rgba(232, 236, 240, 0.25);
+                    border: 1px solid #ced4da;
+                }
             }
         }
         .form_two {
             .form-control {
                 height: 2.8rem;
                 width: 100%;
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem rgba(232, 236, 240, 0.25);
+                    border: 1px solid #ced4da;
+                }
             }
         }
         .subtitle__input {
@@ -94,4 +107,10 @@
     font-size: 14px;
     font-family: $Relawey;
     font-weight: 300;
+    input {
+        &:focus {
+            outline: none;
+            background-color: red;
+        }
+    }
 }

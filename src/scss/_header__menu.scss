@@ -21,6 +21,7 @@
                     color: white;
                     text-transform: uppercase;
                     font-size: 12px;
+                    font-weight: 600;
                 }
                 .tel_number {
                     margin-left: 0.5rem;
@@ -36,6 +37,7 @@
                         text-decoration: none;
                         animation: bounce 1s;
                         background-color: #24bbbc;
+                        color: #ffffff;
                     }
                     @keyframes bounce {
                         0%,
@@ -63,9 +65,24 @@
         .dropdown {
             width: 100%;
             &.show {
+                .icon_text {
+                    text-align: left;
+                    &:hover {
+                        background-color: #ffffff;
+                    }
+                }
                 /* ONE */
                 .dropdown-item {
                     display: inline;
+                    &:hover {
+                        font-weight: 600;
+                        background-color: #ffffff;
+                    }
+                    &:active {
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: #d5d5d5;
+                    }
                 }
                 #hamburger-1 .line:nth-child(2) {
                     opacity: 0;
@@ -88,6 +105,8 @@
                 }
             }
             .dropdown-toggle {
+                display: flex;
+                align-items: center;
                 padding: 1.2rem 1.3rem 1rem;
                 color: black;
                 font-size: 14px;
@@ -96,6 +115,12 @@
                 background-color: $yelloy;
                 &:after {
                     display: none;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &:active {
+                    box-shadow: none!important;
                 }
             }
         }
@@ -124,16 +149,21 @@
     &__icons {
         align-items: center;
         line-height: 2.0;
-        padding-left: 49px;
+        padding-left: 16px;
         display: flex;
         .icon_main {
+            width: 25px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
             font-family: $Roboto;
             font-size: 14px;
             color: #858585;
         }
     }
     &__list {
-        padding-left: 10px;
+        padding-left: 1px;
         padding-right: 22px;
         margin-top: -1px;
         height: 100%;
@@ -144,7 +174,9 @@
         a {
             &:hover {
                 text-decoration: none;
-                color: white;
+                color: #222222;
+                background-color: #62c1e1;
+                ;
             }
         }
         .list__text {
@@ -153,6 +185,7 @@
             font-size: 12px;
             font-family: $Relawey;
             font-weight: bold;
+            padding: 19px 11px;
             &.hot_list {
                 position: relative;
                 .hot_main {
@@ -163,6 +196,9 @@
                     position: absolute;
                     margin-top: -45px;
                     margin-left: 13px;
+                    .hot_text {
+                        color: #ffffff;
+                    }
                 }
                 .triangle_hot {
                     width: 0;
@@ -184,6 +220,9 @@
                     position: absolute;
                     margin-top: -45px;
                     margin-left: 47px;
+                    .new_text {
+                        color: #ffffff;
+                    }
                 }
                 .triangle_new {
                     width: 0;

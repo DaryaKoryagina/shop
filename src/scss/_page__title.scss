@@ -45,6 +45,9 @@
                     color: white;
                     font-family: $Relawey;
                     font-weight: 600;
+                    &:hover {
+                        color: #f6e2e2;
+                    }
                 }
                 .link_mg {
                     margin-left: -10px;

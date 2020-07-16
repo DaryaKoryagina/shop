@@ -64,6 +64,10 @@
                     font-size: 14px;
                     font-family: $Roboto;
                     color: #777777;
+                    &:hover {
+                        text-decoration: none;
+                        color: #050505;
+                    }
                 }
             }
             .supermart {
@@ -103,9 +107,16 @@
                 font-family: $Roboto;
                 color: #555555;
                 a {
+                    padding-left: 4px;
                     font-size: 14px;
                     font-family: $Roboto;
                     color: #aaaaaa;
+                    &:hover {
+                        text-decoration: none;
+                        font-style: italic;
+                        font-weight: 500;
+                        color: #352514;
+                    }
                 }
             }
         }

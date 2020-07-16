@@ -23,6 +23,9 @@
     &_main {
         margin-left: 1.5rem;
         display: flex;
+        &:focus {
+            outline: none;
+        }
         @media(max-width: 1199px) and (min-width: 992px) {
             margin-left: 0;
         }
@@ -34,6 +37,10 @@
         padding: 0 1rem;
         height: 100%;
         width: 513px;
+        &:focus {
+            outline: none;
+            overflow: none;
+        }
         &::placeholder {
             font-size: 12px;
         }
@@ -51,6 +58,7 @@
         width: 48px;
         &:focus {
             outline: none;
+            box-shadow: 1px 1px 9px 3px rgba(242, 196, 95, 1);
         }
     }
     &__item {
@@ -66,6 +74,11 @@
         color: #e8e8e8;
         &:hover {
             color: #e8e8e8;
+            background: #ffe7e7;
+        }
+        &:focus {
+            background: #d8b0b0;
+            outline: none;
         }
     }
     &__text {
@@ -75,6 +88,13 @@
         font-size: 12px;
         font-family: $Roboto;
         font-weight: 400;
+        a {
+            padding-left: 4px;
+            color: #fc6666;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &__col {
         margin-top: -7px;

@@ -22,6 +22,11 @@
                 .links_title {
                     display: flex;
                     align-items: center;
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
                 }
                 &_title {
                     font-size: 13px;
@@ -35,6 +40,9 @@
                     font-weight: 500;
                     color: #555555;
                     position: relative;
+                    &:hover {
+                        font-weight: 600;
+                    }
                     &::before {
                         content: "";
                         background: #dadada;
@@ -474,7 +482,9 @@
                                     padding-left: 6px;
                                 }
                                 &.active {
-                                    border-color: #1b7a8a;
+                                    background: #48b0c0;
+                                    color: #ffff;
+                                    border-color: #48b0c0;
                                 }
                             }
                         }
@@ -659,6 +669,9 @@
                 @media(max-width: 991px) {
                     display: none;
                 }
+                a {
+                    color: #2a2b2e;
+                }
             }
             .ad {
                 .img_ad {
@@ -795,5 +808,12 @@
                     }
                 }
             }
+        }
+    }
+    
+    a {
+        &:hover {
+            text-decoration: none;
+            color: #212529;
         }
     }

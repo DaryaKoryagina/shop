@@ -63,12 +63,23 @@
         @media(max-width: 1199px) and (min-width: 992px) {
             width: 100%;
         }
+        .input {
+            &:focus {
+                outline: none;
+            }
+        }
     }
     .seach {
         height: 100%;
         width: 403px;
         font-size: 13px;
         padding-left: 16px;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+        }
         @media(max-width: 600px) {
             margin-bottom: 1rem;
             width: 100%;
@@ -90,6 +101,10 @@
         width: 98px;
         border-color: #ffd200;
         border: 1px solid #ffd200;
+        &:focus {
+            outline: none;
+            box-shadow: 1px 1px 9px 3px #f2c45f;
+        }
         @media(max-width: 600px) {
             justify-content: center;
             display: flex;
@@ -115,7 +130,7 @@
         padding-bottom: 2rem;
     }
     .submit__line {
-        border-left: 2px solid #5c9ee8;
+        border-left: 2px solid #128ca4;
         height: 46px;
         margin-left: -26px;
         @media(max-width: 991px) {
@@ -158,6 +173,12 @@
         @media(max-width: 600px) {
             justify-content: center;
         }
+        a {
+            color: #444444;
+            &:hover {
+                color: #ffffff;
+            }
+        }
     }
     .round_seach {
         margin-right: 4px;
@@ -169,6 +190,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover {
+            background: #62c1e1;
+        }
+        &:focus {
+            background: #5090a6;
+        }
         @media(max-width: 600px) {
             margin-right: 0.5rem;
         }

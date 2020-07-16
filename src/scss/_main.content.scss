@@ -89,6 +89,12 @@
                 font-size: 14px;
                 font-family: $Roboto;
                 color: #7a7a7a;
+                a {
+                    color: #7a7a7a;
+                    &:hover {
+                        color: #222222;
+                    }
+                }
             }
             &__img {
                 padding-right: 1.2rem;
@@ -174,6 +180,15 @@
                     align-items: center;
                     justify-content: center;
                     height: 24px;
+                    &:hover {
+                        background-color: #ffd8d8;
+                    }
+                    &:focus {
+                        background-color: #d3caca8f;
+                    }
+                    &:active {
+                        background-color: #d3caca8f;
+                    }
                     &__img {
                         width: 10px;
                         height: 10px;
@@ -195,4 +210,46 @@
 
 .advantage {
     border-top: 1px solid $grey;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+// raiting
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.rating-stars ul>li.star {
+    display: inline-block;
+}
+
+
+/* Idle State of the stars */
+
+.rating-stars ul>li.star>i {
+    font-size: 10px;
+    /* Change the size of the stars */
+    color: #ccc;
+    /* Color on idle state */
+}
+
+
+/* Hover state of the stars */
+
+.rating-stars ul>li.star.hover>i {
+    color: #FFCC36;
+}
+
+
+/* Selected state of the stars */
+
+.rating-stars ul>li.star.selected>i {
+    color: #f8c848;
 }

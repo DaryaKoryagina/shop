@@ -3,7 +3,6 @@
                             margin-top: 78px;
                             &__title {
                                 line-height: 29px;
-                                margin-left: 3px;
                                 margin-bottom: 7px;
                                 font-family: $Relawey;
                                 font-weight: 600;
@@ -27,7 +26,6 @@
                                 }
                                 .text_pw {
                                     margin-top: 13px;
-                                    margin-left: 7px;
                                     @media(max-width: 991px) {
                                         margin-top: 18px;
                                     }
@@ -37,7 +35,6 @@
                                 }
                                 .text_span {
                                     margin-top: -5px;
-                                    margin-left: 3px;
                                     @media(max-width: 991px) {
                                         margin-top: 22px;
                                     }

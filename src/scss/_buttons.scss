@@ -7,20 +7,36 @@
     padding: 0.7rem 1.3rem 0.5rem;
     font-weight: 600;
     border-radius: 2px;
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        color: #ffffff;
+        outline: 0;
+        box-shadow: none;
+    }
     &_grey {
         padding: 0.6rem 0.9rem;
         color: #888888;
         background-color: #eeeeee;
         border: 1px solid #eeeeee;
+        &:hover {
+            background-color: #b8b1b1;
+            color: #222222;
+        }
         @media(max-width: 991px) {
             margin-bottom: 2rem;
         }
         &_card {
             margin-bottom: 0.9rem;
+            &:hover {
+                color: #232323;
+            }
         }
     }
     &_big {
         background-color: #15081754;
+        // background-color: #15081754;
         flex: 0 0 100%;
         width: 100%;
         margin-top: 1.5rem;
@@ -29,16 +45,27 @@
         font-family: $Relawey;
         text-transform: uppercase;
         font-size: 16px;
+        &:hover {
+            color: #232323;
+            background-color: #f6d4d4;
+        }
+        &:focus {
+            box-shadow: 1px 1px 10px 1px rgba(207, 209, 204, 1);
+        }
     }
     &_pay {
         margin-bottom: 1.2rem;
         margin-top: 1.2rem;
         margin-right: 1.5rem;
         padding: 1rem 1.8rem;
-        background-color: #408de4;
+        background-color: #29a4c4;
         font-family: $Relawey;
         text-transform: uppercase;
         font-size: 15px;
+        &:hover {
+            background-color: #838f91;
+            color: #232323;
+        }
     }
 }
 
@@ -49,4 +76,131 @@ h2 {
     font-family: $Relawey;
     color: #232323;
     font-weight: 600;
+}
+
+@keyframes btn-pulse {
+    50% {
+        background-color: #29a4c4;
+        ;
+    }
+}
+
+@keyframes btn-pulse-yellow {
+    50% {
+        background-color: #ffd200;
+        ;
+    }
+}
+
+.btn-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.btn-pulse-yellow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    background-color: #ffd200;
+}
+
+.btn-pulse-yellow:hover,
+.btn-pulse-yellow:focus,
+.btn-pulse-yellow:active {
+    -webkit-animation-name: btn-pulse-yellow;
+    animation-name: btn-pulse-yellow;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #ffd200;
+    color: white;
+}
+
+.btn-pulse:hover,
+.btn-pulse:focus,
+.btn-pulse:active {
+    -webkit-animation-name: btn-pulse;
+    animation-name: btn-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #29a4c4;
+    color: white;
+}
+
+.btn_functional {
+    letter-spacing: 0.02rem;
+    padding: 0.65rem 0.85rem;
+    background-color: #222222;
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: #ffd200;
+    }
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+@-webkit-keyframes hvr-pop {
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes hvr-pop {
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
