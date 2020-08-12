@@ -40,7 +40,7 @@
                     <div class="row justify-content-between ">
                         <div class="col-lg-3">
                             <div class="header__search_supermart">
-                                <img src="images/beauty.jpg" alt="">
+                                <img src="images/beauty.png" alt="">
                                 <div class="header__search__title">LOTUS</div>
                             </div>
                         </div>
@@ -345,16 +345,15 @@
                 <div class="form_one col-lg-6">
                     <div class="account__form_one">
                         <div class="account__form_title">Registered Customer</div>
-                        <div class="subtitle__input_one">Username or emai <span>*</span> </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
+                        <div class="subtitle__input_one">Username or email <span>*</span> </div>
+                        <input type="text" class="form-control form-email" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
                     </div>
                     <div class="account__form">
-
                         <div class="subtitle__input">Password <span>*</span> </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
+                        <input type="password" class="form-control form-email" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
                     </div>
                     <div class="account__btn">
-                        <button class="btn_grey btn-pulse ">LOGIN</button>
+                        <button class="btn_grey btn-pulse btn-email">LOGIN</button>
                         <div class="account__check">
                             <input class type="checkbox" name="option4" value="a4"> Remember Me
                         </div>
@@ -373,13 +372,32 @@
                     <div class="account__form">
 
                         <div class="subtitle__input">Password <span>*</span> </div>
-                        <input type="text" class="form-control" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
+                        <input type="password" class="form-control" placeholder="" aria-label="Имя получателя" aria-describedby="basic-addon2">
                     </div>
                     <div class="account__btn">
-                        <button class=" btn_grey btn-pulse ">Register</button>
+                        <button class=" btn_grey btn-pulse modal_btn">Register</button>
                     </div>
                 </div>
 
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                  </button>
+                            </div>
+                            <div class="modal-body">
+                                Your registration was successful.</br>Thank you for your time and trust.</br>We are happy to help you!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -485,7 +503,7 @@
                 <div class="row ">
                     <div class="col-lg-4 col-md-12 footer_col one">
                         <div class=" supermart ">
-                            <img src="images/beauty.jpg" alt="">
+                            <img src="images/beauty.png" alt="">
                             <div class="sup__title">LOTUS</div>
 
                         </div>

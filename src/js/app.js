@@ -5,7 +5,7 @@ import Flickity from 'flickity'
 import FlickityFull from 'flickity-fullscreen'
 import FlickityNav from 'flickity-as-nav-for'
 import * as select2 from 'select2'
-
+import './pages';
 
 
 
@@ -13,6 +13,7 @@ $(document).ready(function($) {
     $('.custom__select').select2({
         width: 'resolve'
     });
+
     $('b[role="presentation"]').hide();
     $('.select2-selection__arrow').append('<i class="fa fa-angle-down  arrow_input"></i>');
 
@@ -187,4 +188,5 @@ $(document).ready(function($) {
             $(stars[i]).addClass('selected');
         }
     });
+
 })
