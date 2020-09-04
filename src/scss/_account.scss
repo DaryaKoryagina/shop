@@ -85,39 +85,6 @@
             }
         }
     }
-    .modal {
-        .modal-header {
-            color: #3485b1;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .modal-body {
-            font-family: $Roboto;
-            color: #808080;
-            font-size: 17px;
-            font-weight: 300;
-        }
-        .btn-secondary {
-            background-color: #fc6666;
-            &:active:focus {
-                box-shadow: none;
-            }
-        }
-        .btn-primary {
-            border: none;
-            &:hover,
-            &:active,
-            &:active:focus {
-                background-color: #ffd200;
-                border: none;
-                box-shadow: none;
-            }
-            &:focus {
-                box-shadow: none;
-                background-color: #ffd200;
-            }
-        }
-    }
 }
 
 //общее
@@ -143,6 +110,40 @@
         &:focus {
             outline: none;
             background-color: red;
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        color: #3485b1;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .modal-body {
+        font-family: $Roboto;
+        color: #808080;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .btn-secondary {
+        background-color: #fc6666;
+        &:active:focus {
+            box-shadow: none;
+        }
+    }
+    .btn-primary {
+        border: none;
+        &:hover,
+        &:active,
+        &:active:focus {
+            background-color: #ffd200;
+            border: none;
+            box-shadow: none;
+        }
+        &:focus {
+            box-shadow: none;
+            background-color: #ffd200;
         }
     }
 }
